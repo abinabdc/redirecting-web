@@ -14,9 +14,9 @@
         
         if (code) {
             // Redirect to your React app's OAuth callback route
-            window.location.href = `http://localhost:3000/oauth-callback?code=${code}`;
+            // window.location.href = `http://localhost:3000/oauth-callback?code=${code}`;
             // For production:
-            // window.location.href = `https://abinabdc.github.io/redirecting-web/oauth-callback?code=${code}`;
+            window.location.href = `https://abinabdc.github.io/redirecting-web/oauth-callback?code=${code}`;
         } else {
             // If no code is found, show an error message
             console.error('No authorization code found.');
